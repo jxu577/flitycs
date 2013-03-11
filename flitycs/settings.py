@@ -108,6 +108,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     'C:/Users/Jacqueline/documents/projects/flitycs/data/templates'
+    'data/templates'
 )
 
 INSTALLED_APPS = (
