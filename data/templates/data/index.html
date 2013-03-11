@@ -304,11 +304,11 @@ $(function() {
              $('#tab:visible').hide("fast").fadeOut("fast");
            $('#tab').show("slow").fadeIn("slow");
 
-           var ebidta =parseInt(response['ebitda']);
+           var eps =parseInt(response['earnings_per_share']);
            var pregrowth =parseInt(response['price_earnings_growth_ratio']);
            var growth = pregrowth + 1;
            var pe = parseInt(response['price_earnings_ratio']);
-           var price = ebidta*growth*pe;
+           var price = eps*pregrowth*pe;
 
            if (price >= response['price'])
             { 
