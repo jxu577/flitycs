@@ -151,5 +151,5 @@ def detail(request, stock_id):
 
 
 def index(request):
-    return render(request,'data/index.html',"Welcome to Flitycs")
+    return HttpResponse("Welcome")
     
